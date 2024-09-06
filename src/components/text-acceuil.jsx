@@ -3,7 +3,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function TextAcceuil() {
   return (
-    <div className="text-accueil">
+    <div className="text-accueil max-lg:ml-20">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
         BONJOUR, ICI ON PARTAGE{" "}
         <span className="text-green-500">

@@ -10,7 +10,7 @@ body {
   font-family: sans-serif;
   font-weight: 500;
   background: #fdd8d8;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 /* Conteneur de la barre de navigation */
 .navbar-container {
@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 main {
@@ -186,12 +186,23 @@ main {
     width: 100% !important;
     justify-content: space-between !important;
     align-items: center !important;
-    padding: 4rem 2rem !important;
-    max-width: 1200px !important;
+    /* margin: 1.3rem 2rem !important; */
+    max-width: 1400px !important;
     margin: 0 auto !important;
     overflow: hidden !important;
   }
+  .text-accueil{
+    margin-left: 50px;
+  }
+  .text-accueil h1,
+  .product-text h1 {
+    font-size: 32px !important;
 
+  }
+  .image-acceuil img {
+    width: 100%;
+    height: auto;
+  }
   .nav-menu.active {
     left: 0;
   }
@@ -223,10 +234,10 @@ main {
 .product-page {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 4rem 2rem;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -236,9 +247,9 @@ main {
 }
 
 .text-acceuil h1 {
-  font-size: 3rem;
+  font-size: 1rem;
   color: #790846;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .text-acceuil p {
