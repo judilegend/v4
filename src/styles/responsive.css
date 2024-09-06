@@ -1,0 +1,222 @@
+/* Base styles */
+
+.text-acceuil {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.image-acceuil {
+  flex: 1;
+}
+
+.eclipse {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+/* Large screens (default) */
+@media screen and (min-width: 1024px) {
+  /* .acceuil,
+  .product-page {
+    flex-direction: column;
+  } */
+}
+
+/* Medium screens */
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  /* .acceuil,
+  .product-page {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+  } */
+
+  .text-acceuil {
+    padding-right: 1.5rem;
+  }
+}
+
+/* Small screens */
+@media screen and (max-width: 767px) {
+  /* .acceuil,
+  .product-page {
+    flex-direction: column;
+    padding: 2rem 1rem;
+  } */
+
+  /* Navbar styles */
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu li {
+    margin: 2.5rem 0;
+  }
+
+  .nav-contact {
+    margin-top: 1rem;
+  }
+
+  /* Menu icon animation */
+  .menu-icon.open span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .menu-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.open span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .text-acceuil {
+    padding-right: 0;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .text-acceuil h1 {
+    font-size: 2.5rem;
+  }
+
+  .image-acceuil {
+    margin-top: 2rem;
+  }
+
+  .eclipse {
+    top: -50px;
+    right: -50px;
+  }
+
+  .eclipse img {
+    width: 200px;
+  }
+}
+
+/* Extra small screens */
+@media screen and (max-width: 480px) {
+  /* .acceuil,
+  .product-page {
+    padding: 1.5rem 0.75rem;
+  } */
+
+  .text-acceuil h1 {
+    font-size: 2rem;
+  }
+
+  .text-acceuil p {
+    font-size: 1rem;
+  }
+
+  .cssbuttons-io-button {
+    font-size: 0.9rem;
+    padding: 0.3em 1em;
+  }
+
+  .select {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .select img {
+    width: 60px;
+    margin-bottom: 10px;
+  }
+
+  .product {
+    height: auto;
+  }
+
+  .product img {
+    width: 200px;
+  }
+
+  .img1 {
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+  }
+
+  .img3 {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .text-acceuil h1,
+  .product-text h1 {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-container {
+    padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+}
+/* Adjustments for TextAcceuil component */
+.text-acceuil h1 {
+  margin-bottom: 1rem;
+}
+
+.text-acceuil p {
+  margin-bottom: 1.5rem;
+}
+
+.cssbuttons-io-button {
+  margin-bottom: 2rem;
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.select div {
+  flex: 1;
+  min-width: 100px;
+  margin: 0 0.5rem;
+}
+
+.select img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjustments for ImageAcceuil component */
+.home-image {
+  max-width: 100%;
+  height: auto;
+}
