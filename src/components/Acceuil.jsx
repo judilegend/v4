@@ -4,7 +4,7 @@ import ImageAcceuil from "./image-acceuil";
 
 export default function Acceuil() {
   return (
-    <div className="acceuil">
+    <div className="acceuil overflow-hidden max-md:overflow-hidden">
       <div className="text-acceuil">
         <TextAcceuil />
       </div>
